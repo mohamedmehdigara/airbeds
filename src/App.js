@@ -1,19 +1,19 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { ReactiveBase } from '@appbaseio/reactivesearch';
 
-class App extends Component {
-  render() {
-    return (
-      <section className="container">
-        <ReactiveBase
-          app="housing"
-          credentials="0aL1X5Vts:1ee67be1-9195-4f4b-bd4f-a91cd1b5e4b5"
-          type="listing"
-        >
-          Hello from ReactiveSearch!
-        </ReactiveBase>
-      </section>
-    );
-  }
-}
+const App = () => {
+  return (
+    <section className="container">
+      <ReactiveBase
+        app="YOUR_APP_NAME"
+        url="YOUR_ELASTICSEARCH_URL"
+        credentials="YOUR_APP_ID:YOUR_API_KEY"
+        type="listing"
+      >
+        {/* Your components */}
+      </ReactiveBase>
+    </section>
+  );
+};
+
 export default App;
